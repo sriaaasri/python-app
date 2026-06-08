@@ -79,7 +79,7 @@ timeout 60s python app.py || echo "App terminated after timeout, ignoring error"
 
   }
   environment {
-    REPO_URL = 'http://git-server:3000/max/python-app.git'
+    REPO_URL = 'https://github.com/sriaaasri/python-app.git'
     REPO_DIR = "${WORKSPACE}/python-app"  // Use Jenkins workspace directory
     BRANCH_NAME = 'main'
     RUN_TESTS = 'true'
